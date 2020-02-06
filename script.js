@@ -40,7 +40,7 @@ document.addEventListener("click",(event)=> {
         }
     }
     if (current >= 21) {
-        roll.textContent = `You have won with a score of ${current}.`
+        roll.textContent = `You have won with a score of ${current}. Double or nothing?`
         button.style.display = "none"
         reset.style.display = "inline"
     }
