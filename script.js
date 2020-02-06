@@ -12,35 +12,35 @@ document.addEventListener("click",(event)=> {
         score.textContent = `Your current score is ${current}`
         switch (true) {
             case num == 1:
-                roll.textContent = `You rolled a one! You lose. Better luck next time`
+                roll.textContent = `You rolled a one! You suck kiddo, get outta here!`
                 button.style.display = "none"
                 reset.style.display = "inline"
                 dice.style.backgroundImage = "url(img/dice1.png)"
                 break
             case num == 2:
-                roll.textContent = `You rolled a two!`
+                roll.textContent = `You rolled  two!`
                 dice.style.backgroundImage = "url(img/dice2.png)"
                 break
             case num == 3:
-                roll.textContent = `You rolled a three!`
+                roll.textContent = `You rolled  three!`
                 dice.style.backgroundImage = "url(img/dice3.png)"
                 break
             case num == 4:
-                roll.textContent = `You rolled a four!`
+                roll.textContent = `You rolled  four!`
                 dice.style.backgroundImage = "url(img/dice4.png)"
                 break
             case num == 5:
-                roll.textContent = `You rolled a five!`
+                roll.textContent = `You rolled  five!`
                 dice.style.backgroundImage = "url(img/dice5.png)"
                 break
             case num == 6:
-                roll.textContent = `You rolled a six!`
+                roll.textContent = `You rolled  six!`
                 dice.style.backgroundImage = "url(img/dice6.png)"
                 break
         }
     }
     if (current >= 21) {
-        roll.textContent = `Congratulations! You have won with a score of ${current}.`
+        roll.textContent = `You have won with a score of ${current}.`
         button.style.display = "none"
         reset.style.display = "inline"
     }
